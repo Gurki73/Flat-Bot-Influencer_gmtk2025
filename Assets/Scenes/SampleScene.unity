@@ -6315,9 +6315,9 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.0699774
+    x: 0.22742665
     y: 0
-    width: 0.8600452
+    width: 0.5451467
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -23912,6 +23912,7 @@ MonoBehaviour:
   - {fileID: 1946294376}
   - {fileID: 1765521925}
   - {fileID: 683826829}
+  world: {fileID: 683717045}
 --- !u!1 &1910478805
 GameObject:
   m_ObjectHideFlags: 0

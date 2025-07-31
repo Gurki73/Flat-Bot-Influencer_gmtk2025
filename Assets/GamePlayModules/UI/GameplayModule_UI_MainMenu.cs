@@ -1,5 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 using Capsule.Core;
 using Talk;
 
@@ -59,7 +62,6 @@ namespace Capsule.UI
             }
 #endif
         }
-
         void ClearSavedProgress()
         {
             PlayerPrefs.DeleteKey("HasStartedGame");
@@ -75,29 +77,31 @@ namespace Capsule.UI
 
             bool hasProgress = PlayerPrefs.HasKey("HasStartedGame");
             Debug.Log("[MainMenu] has progress: " + hasProgress);
-            // Show both buttons, but disable one of them based on progress
+
             newGameButton.gameObject.SetActive(true);
             resumeButton.gameObject.SetActive(true);
 
             newGameButton.interactable = !hasProgress;
             resumeButton.interactable = hasProgress;
+
         }
 
 
         public override void OnExit()
         {
-
+            gameObject.SetActive(false);
         }
 
         void OnResume()
         {
-            GameStack.Instance.Pop();
+            Debug.Log(" Resume Button in Main Menu pressed ");
+            StackExtensions.LoadStackState();
         }
 
         void OnNewGame()
         {
-            GameStack.Instance.Clear();
             Debug.Log("🆕 New Game started → requesting genre...");
+            // GameStack.Instance.Clear();
 
             PlayerPrefs.SetInt(newGameKey, 1);
             PlayerPrefs.Save();
@@ -105,7 +109,7 @@ namespace Capsule.UI
             if (intro != null)
             {
                 Time.timeScale = 1f;
-                gameObject.SetActive(false);
+
                 introObject.gameObject.SetActive(true);
                 GameStack.Instance.Pop();
                 GameStack.Instance.Push(intro);

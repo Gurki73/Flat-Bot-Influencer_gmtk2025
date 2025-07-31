@@ -24,7 +24,7 @@ namespace Capsule.UI
 
         public override void OnEnter()
         {
-
+            gameObject.SetActive(true);
             ShowCurrentLine();
         }
 

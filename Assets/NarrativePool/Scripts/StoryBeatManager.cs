@@ -1,6 +1,9 @@
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
+
+using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 using Capsule.Core;
@@ -69,21 +72,25 @@ namespace Narrative
 
         private void TriggerBeat(StoryBeat beat)
         {
-
             if (beat.onBeatTriggers != null && beat.onBeatTriggers.Contains("pushMainMenu") && onlyOnce)
             {
                 onlyOnce = false;
-                GameStack.Instance.Push(startMenu);
+                StartCoroutine(DelayedPushMainMenu());
                 progressMap.Remove(beat.targetID);
                 return;
             }
-
 
             beat.isCompleted = true;
             Debug.Log($"✅✅✅✅✅ [BeatManager] Beat triggered: {beat.beatID}");
 
             ApplyEffects(beat);
             progressMap.Remove(beat.targetID);
+        }
+
+        private IEnumerator DelayedPushMainMenu()
+        {
+            yield return null; // wait for next frame
+            GameStack.Instance.Push(startMenu);
         }
 
         private void ApplyEffects(StoryBeat beat)
