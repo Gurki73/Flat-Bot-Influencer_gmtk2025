@@ -143,7 +143,10 @@ namespace Capsule.UI
             DialogFlowController.Instance?.PushNextDialogStep();
         }
 
-
+        public void Skip()
+        {
+            TriggerNextStep();
+        }
 
         private IEnumerator FadeOutImage(Image img, float duration)
         {

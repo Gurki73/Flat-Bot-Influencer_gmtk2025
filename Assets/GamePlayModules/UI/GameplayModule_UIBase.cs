@@ -17,7 +17,15 @@ namespace Capsule.UI
         public abstract void OnExit();
 
         public virtual void Tick() { }
-        public virtual void OnInput(Inputs input) { }
+        public void OnInput(Inputs input)
+        {
+            if (input == Inputs.SecondaryAction) Skip();  // Use '==' for comparison, not '='
+            else OnInput_UI(input);
+        }
+
+        public virtual void OnInput_UI(Inputs input) { }
+        public virtual void Skip() { }
+
         [SerializeField] protected Canvas rootCanvas;
 
         public override void Initialize(int order)

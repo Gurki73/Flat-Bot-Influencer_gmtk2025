@@ -57,8 +57,12 @@ namespace Capsule.UI
             gameObject.SetActive(false); // <- This disables the GameObject (and will prevent Update, etc.).
         }
 
+        public void Skip()
+        {
+            OnInput_UI(Inputs.Jump);
+        }
 
-        public override void OnInput(Inputs input)
+        public override void OnInput_UI(Inputs input)
         {
             if (input == Inputs.Pause) return;
             GameStack.Instance.Pop(); // Or whatever method exits this panel

@@ -41,8 +41,11 @@ namespace Capsule.Core
         public void Pop()
         {
             Debug.Log("module was poped");
-            if (_stack.Count == 0) return;
-
+            if (_stack.Count == 0)
+            {
+                Debug.LogWarning(" Last was popped ");
+                return;
+            }
             var top = _stack.Pop();
             top.OnExit();
 

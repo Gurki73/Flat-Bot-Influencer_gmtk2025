@@ -77,7 +77,12 @@ namespace Capsule.UI
             //  dialogHUD.Clear();
         }
 
-        public override void OnInput(Inputs input)
+        public void Skip()
+        {
+            var line = dialog.Lines[currentLineIndex];
+            if (!line.HasChoices) AdvanceDialog();
+        }
+        public override void OnInput_UI(Inputs input)
         {
             AdvanceDialog(); // or let player skip
         }
