@@ -35,6 +35,11 @@ namespace CameraCrew
                 rect.y = 0;
                 cam.rect = rect;
             }
+            void Start()
+            {
+                Screen.SetResolution(960, 540, false); // false = windowed mode
+            }
+
         }
     }
 }

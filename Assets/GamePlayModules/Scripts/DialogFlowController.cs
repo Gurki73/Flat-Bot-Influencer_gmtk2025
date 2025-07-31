@@ -28,7 +28,6 @@ namespace Talk
                 return;
             }
             Instance = this;
-            DontDestroyOnLoad(gameObject);
         }
 
         public void PushNextDialogStep()
