@@ -90,7 +90,7 @@ namespace Capsule.Core
             {
                 var uiModule = CapsuleRoot.Instance
                     .GetAllModules()
-                    .OfType<GameplayModule_UIBase>()
+                    .OfType<IGameplayModule>()
                     .FirstOrDefault(m => m.Id == id);
 
                 if (uiModule != null)

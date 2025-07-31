@@ -11,9 +11,17 @@ namespace Talk
         public List<DialogLine> Lines;
     }
 
+    public enum SpeakerType
+    {
+        AI,
+        Producer,
+        Both
+    }
+
     [Serializable]
     public class DialogLine
     {
+        public SpeakerType speakerType;
         public string Speaker; // "Player", "AI", etc.
         [TextArea(2, 4)]
         public string Text;

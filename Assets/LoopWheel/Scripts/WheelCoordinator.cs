@@ -31,10 +31,10 @@ namespace Wheel
 
         private void SpawnAndPushWheel(List<WheelOption> options, Action<WheelOption> callback)
         {
-            GameObject instance = Instantiate(wheelPrefab);
-            WheelModule wheel = instance.GetComponent<WheelModule>();
-            wheel.Setup(options, callback);
-            GameStack.Instance.Push(wheel);
+            //  GameObject instance = Instantiate(wheelPrefab);
+            //  WheelModule wheel = instance.GetComponent<WheelModule>();
+            //  wheel.Setup(options, callback);
+            //  GameStack.Instance.Push(wheel);
         }
     }
 }

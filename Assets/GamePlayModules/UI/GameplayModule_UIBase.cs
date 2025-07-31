@@ -4,9 +4,14 @@ using Capsule.Core;
 
 namespace Capsule.UI
 {
-    public abstract class GameplayModule_UIBase : ModuleBase, IGameplayModule
+    public abstract class GameplayModule_UIBase : ModuleBase
     {
         [SerializeField] protected string id = "";
+
+        public enum SpeakerType { AI, Producer, Both }
+
+        [SerializeField] private SpeakerType _speakerType = SpeakerType.Both;
+        public virtual SpeakerType speakerType => _speakerType;
 
         public GameObject module;
         public string name;

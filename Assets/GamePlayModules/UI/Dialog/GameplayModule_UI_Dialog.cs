@@ -7,6 +7,8 @@ namespace Capsule.UI
 {
     public class GameplayModule_UI_Dialog : GameplayModule_UIBase
     {
+        public SpeakerType speakerType;
+
         [SerializeField] private DialogData dialog;
         [SerializeField] private DialogHUD dialogHUD; // Your UI display logic
         private int currentLineIndex;

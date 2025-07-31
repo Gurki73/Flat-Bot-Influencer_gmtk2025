@@ -4357,6 +4357,7 @@ MonoBehaviour:
   moduleNameOverride: 
   priority: 5
   id: 
+  speakerType: 0
   module: {fileID: 409941198}
   name: 
   rootCanvas: {fileID: 477015691}
@@ -4418,6 +4419,7 @@ MonoBehaviour:
   moduleNameOverride: 
   priority: 1
   id: 
+  speakerType: 0
   module: {fileID: 0}
   name: 
   rootCanvas: {fileID: 1876237320}
@@ -5938,9 +5940,11 @@ MonoBehaviour:
   moduleNameOverride: 
   priority: 3
   id: 
+  speakerType: 0
   module: {fileID: 0}
   name: 
   rootCanvas: {fileID: 577933284}
+  speakerType: 0
   dialog: {fileID: 0}
   dialogHUD: {fileID: 0}
 --- !u!1 &491941855
@@ -6315,9 +6319,9 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.22742665
+    x: 0.30361173
     y: 0
-    width: 0.5451467
+    width: 0.39277655
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -9121,7 +9125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &683717046
 Transform:
   m_ObjectHideFlags: 0
@@ -9216,9 +9220,11 @@ MonoBehaviour:
   moduleNameOverride: 
   priority: 3
   id: 
+  speakerType: 0
   module: {fileID: 0}
   name: 
   rootCanvas: {fileID: 592479281}
+  speakerType: 2
   dialog: {fileID: 0}
   dialogHUD: {fileID: 0}
 --- !u!1 &688007754
@@ -11996,9 +12002,11 @@ MonoBehaviour:
   moduleNameOverride: 
   priority: 3
   id: 
+  speakerType: 0
   module: {fileID: 0}
   name: 
   rootCanvas: {fileID: 1541152557}
+  speakerType: 2
   dialog: {fileID: 0}
   dialogHUD: {fileID: 0}
 --- !u!1 &976446353
@@ -20489,6 +20497,7 @@ MonoBehaviour:
   moduleNameOverride: 
   priority: 4
   id: 
+  speakerType: 0
   module: {fileID: 1627926827109293522, guid: 60aa8c6ad14cf4340a86d194ae5f02ca, type: 3}
   name: 
   rootCanvas: {fileID: 1283324348}
@@ -22611,9 +22620,11 @@ MonoBehaviour:
   moduleNameOverride: 
   priority: 3
   id: 
+  speakerType: 0
   module: {fileID: 0}
   name: 
   rootCanvas: {fileID: 1344859439}
+  speakerType: 0
   dialog: {fileID: 0}
   dialogHUD: {fileID: 0}
 --- !u!1 &1770219466
@@ -23906,6 +23917,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc2c1fc577965d49b6b52c48b225861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  cameraPosAi: {x: 0, y: 0, z: 0}
+  cameraPosProducerGuy: {x: 0, y: 0, z: 0}
+  cameraPosDialog: {x: 0, y: 0, z: -10}
   dialogModules:
   - {fileID: 972799559}
   - {fileID: 489696028}
@@ -24388,9 +24403,11 @@ MonoBehaviour:
   moduleNameOverride: 
   priority: 3
   id: 
+  speakerType: 0
   module: {fileID: 0}
   name: 
   rootCanvas: {fileID: 1674962412}
+  speakerType: 1
   dialog: {fileID: 0}
   dialogHUD: {fileID: 0}
 --- !u!1 &1955180659
@@ -27200,6 +27217,7 @@ MonoBehaviour:
   moduleNameOverride: 
   priority: 2
   id: 
+  speakerType: 0
   module: {fileID: 0}
   name: 
   rootCanvas: {fileID: 245949500477351565}
@@ -31107,6 +31125,7 @@ MonoBehaviour:
   moduleNameOverride: 
   priority: 1
   id: 
+  speakerType: 0
   module: {fileID: 0}
   name: 
   rootCanvas: {fileID: 8005655122390076145}
