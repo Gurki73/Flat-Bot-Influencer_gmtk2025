@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe186cfde32646146a7d2839b2b402cd, type: 3}
+  m_Name: WealthValue
+  m_EditorClassIdentifier: 
+  id: 
+  name: 
+  IsActive: 1
+  explanation: "Represents the perceived value or burden of an object, place, or
+    decision. \"! wealth \u2260 price\""
+  LabelNegative: -1 = harmful, cursed, or a liability.
+  LabelNeutral: "\xB10 = cheap, ordinary, or disposable"
+  LabelPositive: +1 = valuable, rare, or highly desirable
+  MinValue: -1
+  MaxValue: 1
+  Icon: {fileID: 0}
+  InternalLocked: 0

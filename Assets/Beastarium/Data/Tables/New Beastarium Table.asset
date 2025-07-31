@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1f7bcec85ed34c4584b0e0166967838, type: 3}
+  m_Name: New Beastarium Table
+  m_EditorClassIdentifier: 
+  tableName: Test
+  enemies:
+  - {fileID: 11400000, guid: a75a3bf7be0b93a45afcf690a65ce3f3, type: 2}
+  attacks:
+  - {fileID: 11400000, guid: 00c897786ce847241ba765ce43cd0af5, type: 2}
+  matrix:
+  - modifiers:
+    - -0.5

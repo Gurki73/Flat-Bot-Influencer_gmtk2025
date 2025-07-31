@@ -1,0 +1,63 @@
+Stage Book Title / Type	Symbolizes
+Baby/Toddler	Coloring Book	Creativity, early discovery
+Child	ABC & Math Workbook	Learning, structure
+Teen	Journal / Diary	Identity, emotions, independence
+Adult	File Folder / Portfolio	Career, contribution, ambition
+Senior	Memory Book / Album	Reflection, life’s journey
+
+Result: Example 12 Neurons (3 attributes each)
+Neuron #	Attribute Set
+N1	A, B, G
+N2	C, D, G
+N3	E, F, G
+N4	A, C, E
+N5	B, D, F
+N6	A, D, E
+N7	B, C, F
+N8	A, F, G
+N9	B, E, G
+N10	C, D, F
+N11	A, D, G
+N12	C, E, B
+
+private static readonly Dictionary<string, string[]> NeuronAttributeMap = new()
+{
+    { "N0", "Protagonist", new[] { "Morality", "Value", "StoryBeat" } },         // Core hero
+    { "N1", "Antagonist", new[] { "Morality", "Mood", "Energy" } },              // Villainous force,
+    { "N2", "Ally", new[] { "Morality", "Persistence", "WorldNature" } },        // Supporting friend/mentor/loveInterst/pet;
+    { "N3", "PrimaryLocation", new[] { "Value", "WorldNature", "StoryBeat" } },  // Main place/world
+    { "N4", "SecondaryLocation", new[] { "Value", "Mood", "Energy" } },          // Secondary setting; emotional tone
+    { "N5", "Intention", new[] { "Morality", "Persistence", "Value" } },         // Drives character goals
+    { "N6", "Action", new[] { "Energy", "Mood", "StoryBeat" } },                 // Dynamic plot movement and atmosphere
+    { "N7", "Decision", new[] { "Value", "Persistence", "Morality" } },          // Plot choices with ethical & material stakes
+    { "N8", "MacGuffin", new[] { "Value", "WorldNature", "Persistence" } },      //Plot-driving object with world flavor & stability
+    { "N9", "Tension", new[] { "Morality", "Mood", "Persistence" } },            // escalating narrative pressure and challenge
+    { "N10", "Object", new[] { "Value", "Energy", "WorldNature" } },             // Regular object with physical/energy impact
+    { "N11", "EnvironmentalEffect", new[] { "Mood", "Energy", "StoryBeat" } },   // Atmosphere, weather, ambiance shaping narrative pace
+};
+
+# Neuron structure:
+Each neuron has 3 attributes: [a, b, c] in range[-1, +1]
+Each synapse has:
+-A global weight `g`
+- Six permutation weights `p1` to `p6`
+
+# Alignment function:
+alignment = g * sum(p_k * dot(x, perm_k(y))) for k in 1..6
+
+# Update rule for each permutation weight p_k:
+dot_val = abs(dot(x, perm_k(y)))
+delta_p_k = g * (dot_val - threshold)
+p_k += delta_p_k
+
+# Threshold evolves over time from 0.5 -> 0.8 (instead of using a decaying η)
+# This reinforces both aligned and opposed patterns, and weakens orthogonal ones
+
+# Optional:
+- Use squared dot_val instead of abs for stronger gradient
+- Normalize x and y vectors before dot product
+
+# Final note:
+- This is a biologically inspired unsupervised learning system
+- Similar to Hebbian AI, SOMs, and vector symbolic learning
+- Fully qualifies as an AI system — creative and pattern-adaptive

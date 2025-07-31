@@ -1,0 +1,71 @@
+Platform	Follower Goal	Growth Notes
+HipHob	   100,000 followers	Viral-friendly, short content, low barrier to entry
+LateGram	60,000 followers	Steady growth, highly visual, aesthetic-driven
+Zirp	    30,000 followers	Harder to grow due to noise, but good for spikes
+Dretit	     5,000 followers	Slowest growth, reputation > follower count
+myPipe	    50,000 followers	Slow start, strong long-term retention
+
+| **Platform →** \ **Beat ↓** | **LateGram** | **Zirp** | **Dretit** | **myPipe** | **HipHob** |
+| --------------------------- | ------------ | -------- | ---------- | ---------- | ---------- |
+| **Intro**                   | ✅          | ""       | ""          | ""         | ❌        |
+| **Hurdle**                  | ❌          | ""       | ""          | ""         | ✅        |
+| **Failure**                 | ❌          | ""       | ✅         | ""          | ""        |
+| **Betrayal**                |              | ✅      | ""          | ❌         | ""        |
+| **Twist**                   |             | ❌       | ""          | ✅         | ""        |
+| **Solution**                | ✅          | ""       | ❌          | ""         | ""        |
+
+
+| **Pool (Category: Pool Name)**     | **LateGram** | **Zirp** | **Dretit** | **myPipe** | **HipHob** |
+| ---------------------------------- | ------------ | -------- | ---------- | ---------- | ---------- |
+| **Failures: Arrogance**            | --           | ++       | ++         | +          | -          |
+| **Failures: Sacrifice**            | -            | +        | ++         | ++         | ""         |
+| **Failures: Bad Moral**            | --           | ++       | ++         | +          | -          |
+| **Failures: Clumsiness**           | -            | ++       | +          | +          | +          |
+| **Failures: Bad Luck**             | ""           | +        | ++         | +          | +          |
+| **Hurdles: Resources**             | ""           | +        | +          | ++         | ""         |
+| **Hurdles: Society, Government**   | -            | ++       | ++         | +          | ""         |
+| **Hurdles: Health, Illness**       | -            | +        | ++         | +          | +          |
+| **Hurdles: Nature, Catastrophes**  | +            | +        | +          | ++         | ++         |
+| **Hurdles: Emotions**              | +            | ""       | -          | ++         | ++         |
+| **Solutions: Change**              | ++           | +        | ++         | ++         | ""         |
+| **Solutions: Tragedy**             | --           | +        | ++         | ++         | -          |
+| **Solutions: Peace**               | ++           | -        | +          | +          | --         |
+| **Solutions: Balance**             | ++           | ""       | +          | ++         | -          |
+| **Solutions: Ambiguous**           | ""           | +        | ++         | ++         | -          |
+| **Setting: Time**                  | ++           | -        | +          | ++         | ""         |
+| **Setting: Culture**               | ++           | -        | ++         | ++         | -          |
+| **Setting: Mood**                  | ++           | ""       | +          | ++         | +          |
+| **Setting: Location**              | ++           | -        | ++         | ++         | ""         |
+| **Setting: Tech/Magic**            | +            | ++       | ++         | ++         | ""         |
+| **Motivation: Travel**             | +            | +        | ""         | +          | ++         |
+| **Motivation: Rivalry**            | +            | ++       | +          | +          | +          |
+| **Motivation: Crime**              | -            | ++       | ++         | ++         | +          |
+| **Motivation: Test**               | +            | +        | +          | ++         | ++         |
+| **Motivation: Fun**                | ++           | +        | -          | +          | ++         |
+| **McGuffin: Slice of Life Object** | ++           | ""       | +          | +          | ++         |
+| **McGuffin: Key**                  | ""           | ++       | ++         | ++         | +          |
+| **McGuffin: Artefact**             | +            | ++       | ++         | ++         | +          |
+| **McGuffin: Food**                 | ++           | +        | ""         | +          | ++         |
+| **McGuffin: Machine**              | +            | ++       | ++         | ++         | +          |
+| **Character: Animals**             | ++           | ""       | ""         | +          | ++         |
+| **Character: Heroes**              | ++           | +        | +          | ++         | +          |
+| **Character: Villains**            | -            | ++       | ++         | ++         | +          |
+| **Character: Mentor**              | +            | ""       | +          | ++         | ""         |
+| **Character: Love Interest**       | ++           | +        | ""         | +          | ++         |
+
+| **Genre**     | **Primary Beat** | **Secondary Beats**              |
+| ------------- | ---------------- | -------------------------------- |
+| Romance       | Solution         | Intro, Hurdle                    |
+| Horror        | Failure          | Twist, Betrayal                  |
+| Mystery       | Twist            | Betrayal, Solution               |
+| Comedy        | Clumsiness       | Twist, Failure                   |
+| Fantasy       | Intro            | Hurdle, Solution                 |
+| Sci-Fi        | Setting (Intro)  | Failure, Ambiguous Solution      |
+| Drama         | Betrayal         | Hurdle, Solution                 |
+| Action        | Hurdle           | Failure, Victory (alt. Solution) |
+| Thriller      | Twist            | Hurdle, Betrayal                 |
+| Slice of Life | Intro            | Fun, Solution                    |
+| Tragedy       | Failure          | Betrayal, Tragic Solution        |
+| Adventure     | Hurdle           | Twist, Solution                  |
+ 
+

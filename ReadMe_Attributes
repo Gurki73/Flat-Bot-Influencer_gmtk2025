@@ -1,0 +1,64 @@
+
+| # | Attribute        | Range (−1 to +1)                 | Applies to…                                |
+| - | ---------------- | -------------------------------- | ------------------------------------------ |
+| 1 | **Morality**     | Evil ↔ Good                      | Characters, motives, outcomes              |
+| 2 | **Wealth/Value** | Cheap/Low ↔ Rich/High            | Objects, stakes, worlds                    |
+| 3 | **Mood**         | Sad ↔ Happy                      | Emotional tone of scene, resolution, world |
+| 4 | **World Nature** | Realistic/Tech ↔ Magical/Fantasy | Setting, logic, rules                      |
+| 5 | **Energy**       | Passive ↔ Active                 | Characters, events, actions                |
+| 6 | **Stability** 🆕 | Chaotic ↔ Orderly                | Worlds, systems, scenes, climaxes          |
+| 7 | **Control** 🆕   | Imposed/Forced ↔ Chosen/Freedom  | Motivation, actions, conflicts             |
+
+
+| Attribute (Label)          | Matches Pool Category | Reasoning/Notes                              |
+| -------------------------- | --------------------- | -------------------------------------------- |
+| **A: Morality**            | Characters            | Defines role in conflict (hero/villain etc.) |
+| **B: Wealth / Value**      | Objects / MacGuffins  | Objects are tied to desire, value            |
+| **C: Emotion / Mood**      | Tone / Theme          | Emotional color of the story                 |
+| **D: Worldbuilding**       | Settings              | Sets genre, time, place, logic               |
+| **E: Action / Energy**     | Actions / Events      | Dictates story movement / tension            |
+| **F: Perspective / Theme** | Obstacles / Hurdles   | Challenges the worldview or goal             |
+| **G: Story Beat**          | Events / Resolution   | Drives story structure, turning points       |
+
+| Category             | # Pools | Avg. Items/Pool | Total Items | Notes                                  |
+| -------------------- | ------- | --------------- | ----------- | -------------------------------------- |
+| **Characters**       | 5       | 5–10            | \~40        | Keep emotional depth and recognition   |
+| **Motives / Goals**  | 5       | 6–12            | \~60        | Low volume, high clarity               |
+| **Settings**         | 7       | 20–30           | \~180       | Rich variety, low emotional attachment |
+| **Obstacles**        | 6       | 15–25           | \~150       | High variety, reusability              |
+| **Story Beats**      | 5       | 10–15           | \~75        | Memorable narrative structure          |
+| **Resolutions**      | 4       | 6–10            | \~35        | Strong payoff moments                  |
+| **Objects/Triggers** | 3       | 20–30           | \~75        | Sound, PNG, abstract usable things     |
+
+Attribute	Times used	Slots used
+A-F	5 times	6 × 5 = 30 slots
+G	6 times	1 × 6 = 6 slots
+Total		30 + 6 = 36 slots
+
+
+
+Start	2–3	Villain: Demon, Robber; Hero, Heroine	Simple, iconic, archetypal
+Mid-game	4–6	Add Mentor, Sidekick, Rival	Adds complexity, subplots
+Late-game	7+	Factions, new heroes/villains	Full story ecosystem
+
+maybe we can do kind of reorder.. like [a.x a.y a.z ] compared to [b.x, by, bz] , [b.y, b.z. bx] , permutation maybe 3! or 3^3
+
+Compute dot products 𝑑𝑝 = 𝐴⃗⋅𝑝 (𝐵⃗) for each permutation.
+
+So now let’s build your 12-neuron setup, where:
+
+You have 7 attributes:
+Let’s call them:
+A: Morality
+B: Wealth
+C: Mood
+D: Worldbuilding
+E: Energy
+F: Perspective/Theme
+G: Story Beat ← this one will appear 6 times
+
+✅ Attribute distribution:
+Attribute	Desired Count
+A–F	5 each
+G	6
+Total	36 slots
